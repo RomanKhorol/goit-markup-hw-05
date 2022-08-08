@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-head">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn-hero">Заказать услугу</button>
+          <button type="button" class="btn-hero" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -122,11 +122,24 @@
         <div class="container">
           <h2 class="wedo-title">Чем мы занимаемся</h2>
           <ul class="wedo-list list">
-            <li class="wedo-item"><img src="img/wedo1.jpg" alt="Строим схемы" width="370" /></li>
+            <li class="wedo-item">
+              <img src="img/wedo1.jpg" alt="Строим схемы" width="370" />
+              <div class="over-block">
+                <h3 class="over-block-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+              </div>
+            </li>
             <li class="wedo-item">
               <img src="img/wedo2.jpg" alt="Разрабатываем дизайн" width="370" />
+              <div class="over-block">
+                <h3 class="over-block-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+              </div>
             </li>
-            <li class="wedo-item"><img src="img/wedo3.jpg" alt="Стилизуем" width="370" /></li>
+            <li class="wedo-item">
+              <img src="img/wedo3.jpg" alt="Стилизуем" width="370" />
+              <div class="over-block">
+                <h3 class="over-block-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -389,5 +402,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal" data-modal-close>
+          <svg class="mod-svg" width="18" height="18">
+            <use href="./img/mod-svg.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
